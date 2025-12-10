@@ -30,8 +30,8 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 0;
-    height: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5); /* -- Adjusts the darkness level -- */
     z-index: -1; /* -- Still behind content, avobe the video the video sits behind everything -- */
 }
