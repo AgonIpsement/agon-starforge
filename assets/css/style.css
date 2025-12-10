@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* -- Styling for the background video (testing--might go with image later -- */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* -- This will fill the screen, crooping if needed. -- */
+    z-index: -2; /* -- This ensure the video sits behind everything -- */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.5); /* -- Adjusts the darkness level -- */
+    z-index: -1; /* -- Still behind content, avobe the video the video sits behind everything -- */
+}
