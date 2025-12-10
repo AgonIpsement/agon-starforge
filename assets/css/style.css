@@ -2,6 +2,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    color: #e8ecf0;
+    font-family: sans-serif;
 }
 
 /* -- Styling for the background video (testing--might go with image later -- */
@@ -15,6 +17,14 @@ html, body {
     z-index: -1; /* -- This ensure the video sits behind everything -- */
 }
 
+header {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+}
+
 body::before {
     content: "";
     position: fixed;
@@ -24,4 +34,12 @@ body::before {
     height: 0;
     background: rgba(0, 0, 0, 0.5); /* -- Adjusts the darkness level -- */
     z-index: -1; /* -- Still behind content, avobe the video the video sits behind everything -- */
+}
+
+main {
+    max-width: 800px;
+    margin: 1rem auto 1.5rem;
+    padding: 1rem 1.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
 }
